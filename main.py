@@ -40,8 +40,7 @@ def run_sim(path_to_df, percent_reduction, seed, red_meat, processed_meat, years
 
     path = os.path.join(output_directory, mdir)
     if not os.path.exists(path):
-        os.mkdir(path)
-
+        os.makedirs(path)
 
     print('\n')
     print('#'*20)
