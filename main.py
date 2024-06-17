@@ -17,11 +17,6 @@ def run_sim(path_to_df, percent_reduction, seed, red_meat, processed_meat, years
         else:
             output_directory = 'Output/Final/Two_day_recall/'
 
-
-
-
-
-
     if not os.path.exists(output_directory):
         os.mkdir(output_directory)
 
@@ -117,12 +112,10 @@ def main(args=None):
     options = parse_arguments(args)
     run_sim(**vars(options))
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     start_time=time.time()
     main(sys.argv[1:])
     end_time=time.time()
     print(f'Total running time: {(end_time-start_time)/60} minutes')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
